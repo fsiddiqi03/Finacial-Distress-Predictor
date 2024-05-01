@@ -252,6 +252,9 @@ Recall: 0.89
 F1-score: 0.8998151508614107
 AUC score: 0.805
 ```
+```bash
+Best parameters: {'n_estimators': 100, 'min_samples_split': 3, 'max_features': 10, 'max_depth': None}
+```
 - Precision: Around 91.2% of the positive predictions made by the model are correct, indicating high precision.
 - Recall: The model correctly identifies around 89% of all actual positive instances, demonstrating good sensitivity.
 - F1-score: With an F1-score of approximately 0.900, the model achieves a balance between precision and recall, signifying robust performance.
