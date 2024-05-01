@@ -3,7 +3,7 @@
 The goal of this project is to predict the likelihood of borrowers experiencing financial distress within the next two years, leading to serious defaults or bankruptcy. The prediction is based on borrower features such as age, monthly income, debt, number of times late on payment, and past payment history. The target variable, “SeriousDlqin2yrs,” is binary, with 1 indicating serious financial distress and 0 indicating no such distress.
 
 ### Task and Experience
-The primary task is to predict whether borrowers will experience financial distress within the next two years. This project involves data preprocessing, model training, and evaluation using various machine learning algorithms like logistic regression, K-Nearest Neighbors (KNN), and decision trees. The focus is on using borrower features to predict defaults accurately.
+The primary task is to predict whether borrowers will experience financial distress within the next two years. This project involves data preprocessing, model training, and evaluation using various machine learning algorithms like logistic regression, K-Nearest Neighbors (KNN), and Random Forrest. The focus is on using borrower features to predict defaults accurately.
 
 ## Performance Metrics
 To evaluate model performance, several metrics are used:
