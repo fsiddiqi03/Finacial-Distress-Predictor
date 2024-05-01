@@ -17,6 +17,7 @@ To evaluate model performance, several metrics are used:
 - Loading and Checking the Data:
   -  The data was loaded from a CSV file
   -  After loading, the first few rows were examined to understand the dataset structure.
+  -  Link to dataset https://www.kaggle.com/c/GiveMeSomeCredit/data?select=cs-training.csv
  
 
 ### Data Splitting:
