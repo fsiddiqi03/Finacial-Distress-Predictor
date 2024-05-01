@@ -246,6 +246,12 @@ grid = RandomizedSearchCV(clf, param_grid, cv=5, scoring="roc_auc", n_iter=10, r
 grid.fit(X_train_scaled, y_train_resampled)
 ```
 #### Metrics 
+```bash
+Precision: 0.9118246898692132
+Recall: 0.89
+F1-score: 0.8998151508614107
+AUC score: 0.805
+```
 - Precision: Around 91.2% of the positive predictions made by the model are correct, indicating high precision.
 - Recall: The model correctly identifies around 89% of all actual positive instances, demonstrating good sensitivity.
 - F1-score: With an F1-score of approximately 0.900, the model achieves a balance between precision and recall, signifying robust performance.
