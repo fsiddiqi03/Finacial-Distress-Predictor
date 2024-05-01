@@ -57,10 +57,36 @@ print('Test data labels, label count:', np.unique(y_test, return_counts=True))
 print()
 ```
 
+```bash
+0.06725
+0.0652
+Train data shape: (120000, 10)
+Train data labels, label count: (array([0, 1]), array([111930,   8070]))
+
+Test data shape: (30000, 10)
+Test data labels, label count: (array([0, 1]), array([28044,  1956]))
+```
 
 ### Handling Missing Values:
 - Two columns had missing values: "MonthlyIncome" and "NumberOfDependents".
 - "MonthlyIncome" was imputed with the median value, while "NumberOfDependents" was imputed with the mode.
+
+```bash
+Missing Values in Training Data:
+Unnamed: 0                                  0
+SeriousDlqin2yrs                            0
+RevolvingUtilizationOfUnsecuredLines        0
+age                                         0
+NumberOfTime30-59DaysPastDueNotWorse        0
+DebtRatio                                   0
+MonthlyIncome                           29731
+NumberOfOpenCreditLinesAndLoans             0
+NumberOfTimes90DaysLate                     0
+NumberRealEstateLoansOrLines                0
+NumberOfTime60-89DaysPastDueNotWorse        0
+NumberOfDependents                       3924
+dtype: int64
+```
 
  ```python
 # Impute 'MonthlyIncome' with the median
@@ -83,6 +109,34 @@ print(X_train.isnull().sum())
 print("\nMissing Values in Training Data:")
 print(X_test.isnull().sum())
    ```
+
+```bash
+Missing Values in Training Data:
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+MonthlyIncome                           0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+NumberOfDependents                      0
+dtype: int64
+
+Missing Values in Training Data:
+RevolvingUtilizationOfUnsecuredLines    0
+age                                     0
+NumberOfTime30-59DaysPastDueNotWorse    0
+DebtRatio                               0
+MonthlyIncome                           0
+NumberOfOpenCreditLinesAndLoans         0
+NumberOfTimes90DaysLate                 0
+NumberRealEstateLoansOrLines            0
+NumberOfTime60-89DaysPastDueNotWorse    0
+NumberOfDependents                      0
+dtype: int64
+```
   
 ### Dealing with Class Imbalance:
 - Given the class imbalance, SMOTE (Synthetic Minority Over-sampling Technique) was applied to balance the training data.
